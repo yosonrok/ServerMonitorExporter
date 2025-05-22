@@ -1,0 +1,30 @@
+    metrics = {
+        'drop_count': Gauge(
+            'cg_firewall_drop_total',
+            '當日防火牆 pfirewall.log 中的 DROP 記錄總數',
+            ['server_name']
+        ),
+        'cpu_usage': Gauge(
+            'cg_process_cpu_percent',
+            '進程 CPU 使用率 (%)',
+            ['server', 'process_name']
+        ),
+        'memory_usage': Gauge(
+            'cg_process_memory_usage_bytes',
+            '進程記憶體使用量 (Bytes)',
+            ['server', 'process_name']
+        ),
+        'disk_read_rate': Gauge(
+            'cg_process_disk_read_bytes_per_second',
+            '進程硬碟讀取速率 (Bytes/s)',
+            ['server', 'process_name']
+        ),
+        'disk_write_rate': Gauge(
+            'cg_process_disk_write_bytes_per_second',
+            '進程硬碟寫入速率 (Bytes/s)',
+            ['server', 'process_name']
+        ),
+        'port_connection_count': Gauge(
+            'cg_port_connection_count',
+            '指定端口的 TCP 連接數量',
+            ['server', 'port']

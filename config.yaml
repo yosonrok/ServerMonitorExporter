@@ -1,0 +1,10 @@
+server_name: "game_server_01"
+exporter:
+  port: 8911
+monitor:
+  processes:
+    - name: "game_server.exe"
+    - name: "auth_server.exe"
+  ports:
+    - 8080
+    - 8443
