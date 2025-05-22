@@ -1,0 +1,25 @@
+﻿以下指令使用CMD
+掛載服務
+nssm install ProcessesExporter
+會跳出gui，指向執行檔位置即可
+startup directory會自動帶出
+按下install service即可
+
+
+啟動服務
+nssm start ProcessesExporter
+或
+sc start "ProcessesExporter"
+
+停止服務
+nssm stop ProcessesExporter
+或
+sc stop "ProcessesExporter"
+
+刪除服務
+nssm stop ProcessesExporter
+nssm remove ProcessesExporter confirm
+或
+sc stop "ProcessesExporter"
+sc delete "ProcessesExporter"
+
