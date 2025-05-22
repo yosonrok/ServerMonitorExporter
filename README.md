@@ -1,4 +1,4 @@
-# 此程式使用gork產生
+# 此程式使用grok產生
 # ServerMonitorExporter
 監控特定處理程序 EXPORTER
 
